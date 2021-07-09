@@ -1,6 +1,7 @@
 package com.example.animaldetails;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void buildStudentList() {
         animalList = new ArrayList<>();
-        Animal animal1 = new Animal("Tiger", "Roar", R.drawable.Tiger);
+        Animal animal1 = new Animal("Tiger", "Roar", R.drawable.tiger);
         animalList.add(animal1);
         Animal animal2 = new Animal("Bear", "Growl", R.drawable.bears);
         animalList.add(animal2);
@@ -68,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void setRecyclerView() {
         AnimalAdapter animalAdapter = new AnimalAdapter(animalList);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(animalAdapter);
     }
 

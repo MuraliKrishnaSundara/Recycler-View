@@ -5,7 +5,7 @@
     android:layout_margin="20dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#FF0000"
         android:orientation="vertical">
@@ -15,17 +15,16 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/Tiger" />
+            android:src="@drawable/lion" />
 
         <TextView
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/ivImage"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_toRightOf="@id/ivImage"
             android:padding="12dp"
-            android:text="Tiger"
+            android:text="Lion"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -36,7 +35,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tvName"
             android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@id/ivImage"
             android:padding="12dp"
             android:text="Roar"
             android:textColor="@color/white"
