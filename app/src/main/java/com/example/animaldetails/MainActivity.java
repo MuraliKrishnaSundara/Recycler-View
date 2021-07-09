@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void buildStudentList() {
         animalList = new ArrayList<>();
-        Animal animal1 = new Animal("Tiger", "Roar", R.drawable.tiger);
+        Animal animal1 = new Animal("Tiger", "Roar", R.drawable.download);
         animalList.add(animal1);
         Animal animal2 = new Animal("Bear", "Growl", R.drawable.bears);
         animalList.add(animal2);
